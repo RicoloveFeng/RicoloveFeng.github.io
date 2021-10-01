@@ -235,7 +235,7 @@
 			},
 			async getArticles() {
 				try {
-					const table = await sendXhr('GET', 'https://raw.githubusercontent.com/RicoloveFeng/minecraft.net-translations/master/articles.csv')
+					const table = await sendXhr('GET', 'https://raw.githubusercontent.com/SPXFellow/minecraft.net-translations/master/articles.csv')
 					let articles = [], categories = [], artCategories = []
 					const rows = table.split(/\r?\n/).slice(1, -1)
 					for (const row of rows) {
