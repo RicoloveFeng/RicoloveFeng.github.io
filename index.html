@@ -3,7 +3,7 @@
 <html lang="zh">
 
 <head>
-	<title>SPX Client</title>
+	<title>SPX Browser</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 	<v-app>
 		<v-main>
 			<v-app-bar :color="$vuetify.theme.dark ? 'dark' : 'white'">
-				<v-toolbar-title>SPX Client</v-toolbar-title>
+				<v-toolbar-title>SPX Browser</v-toolbar-title>
 				<v-spacer></v-spacer>
 				<v-tooltip bottom>
 					<template v-slot:activator="{ on, attrs }">
@@ -32,8 +32,14 @@
 				<div>
 					<v-card class="ma-3 px-3 my-6">
 						<v-container>
-							<h5 class="text-h5 text-center my-3">公告</h5>
-							<p>由于 SPX 停止服务，现仅提供用于浏览博文列表的静态页面。感谢 SPGoding 和 电量量 大大的辛苦努力。</p>
+							<h5 class="text-h5 text-center my-3">SPX Browser</h5>
+							<p>SPX Browser 是由开源社区 SPX Fellow 提供的博文目录浏览器，在这里您可以获取最新的 Minecraft.net 博文，并且阅读部分文章的译文。</p>
+							<p>SPX Fellow 还提供以下服务：</p>
+							<ul>
+							<li><a href="https://github.com/SPXFellow/spxx">SPXX 用户脚本</a>：将 Minecraft.net 的博文进行自动排版为 BBCode 格式。</li>
+							<li><a href="https://crowdin.com/project/spxx/zh-CN">SPXX Crowdin</a>：为新修复的 Minecraft Java 版漏洞提供翻译。</li>
+							<li><a href="https://github.com/SPXFellow/whitepaper">SPXDesgin 白皮书</a>：Minecraft.net 博文的 BBCode 排版方案手册。</li>
+							</ul>
 						</v-container>
 					</v-card>
 				</div>
@@ -113,8 +119,8 @@
 					cols="12"
 			>
 				<p style="text-align: center;">
-					<a href="https://github.com/SPXFellow/spxx">Github SPXX 自动化工具</a> |
-					<a href="https://github.com/SPXFellow/minecraft.net-translations">Github 博文目录</a>
+					Powered by <a href="https://github.com/SPXFellow/">SPX Fellow</a> with 🧡 | 
+                    <a href="https://github.com/SPXFellow/minecraft.net-translations">Github - 博文目录</a>
 				</p>
 			</v-col>
 		</v-footer>
